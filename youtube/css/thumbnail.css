@@ -1,0 +1,79 @@
+body {
+    font-family: Roboto;
+    font-weight: 500;
+    color:rgb(0, 0, 0);
+    margin: 0px;
+    background-color: rgb(250, 248, 248);
+}
+
+.thumbnail{
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.videotitle{
+    text-wrap: wrap;
+    font-weight: 500;
+    font-size: 14px;
+    margin-top: 0;
+    margin-bottom: 5px;
+    margin-left: 20px;
+}
+
+.author{
+    color: rgb(101, 101, 101);
+    font-weight: 400;
+    font-size: 12px;
+    margin-top: 8px;
+    margin-bottom: 4px;
+    margin-left: 20px;
+}
+
+.videotile{
+    display: grid;
+    width: 100%;
+    cursor: pointer;
+}
+
+.page{
+    padding-top: 57px;
+    display: flex;
+}
+
+div.content{
+    display: grid;
+    width: 95vw;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    column-gap: 18px;
+    row-gap: 18px;
+    padding: 20px;
+}
+
+@media only screen and (max-width:600px) {
+    div.content{
+        grid-template-columns: 1fr 1fr;
+    }
+}  
+
+@media only screen and (min-width: 600px) { div.content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }}
+
+@media only screen and (min-width: 768px) { div.content{
+        grid-template-columns: 1fr 1fr 1fr;
+    }}
+
+@media only screen and (min-width: 992px) {div.content{
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}}
+
+
+img.logo{
+    width: 36px;
+    border-radius: 36px;
+}
+
+div.logo-align{
+    display: grid;
+    grid-template-columns: 40px 1fr;
+}
